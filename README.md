@@ -1,35 +1,36 @@
 ![cf](http://i.imgur.com/7v5ASc8.png) 33: Sorting Algorithms
 ===
-
-## Submission Instructions
-  * **If you do not include links in your README to online resources you utilized, OR you do not comment your code, you will get a 0.**
-  * Work in a fork of this repository
-  * Work in a branch on your fork called `lab-33`
-  * Submit a pull request to your repository
-  * Submit a link to your pull request on canvas
-  * Set up Travis CI and update your repo to utilize the [Travis CI Github app](https://github.com/marketplace/travis-ci). *Use the free instsallation.*
-  * Submit a question, observation, and how long you spent on Canvas  
-
-## Requirements  
-#### Configuration  
-* Refer to the [backend lab scaffold template](https://github.com/codefellows/seattle-javascript-401d25/tree/master/00-BACKEND-lab-scaffold-template).
-
-#### Feature Tasks 
-* Research and implement three sorting algorithms in Javascript. Refer to [the Wikipedia page](https://en.wikipedia.org/wiki/Sorting_algorithm) on various algorithms
-   * There are LOTS of resources out there in Javascript about these topics. One of the great ones is [Visual Algo](https://visualgo.net/bn/sorting) for visualizations of how the algorithm works. 
-   * You should definitely rely on these resources, **BUT DO NOT BLATANTLY COPY/PASTE CODE THAT YOU FIND ONLINE**
-   * Write comments in your code on what each line is doing so it is clear you made a concerted effort you tried to understand it
-
-#### Tests
 * Write three test assertions for each sorting algorithm 
  
-#### Documentation
+## Sorting Algorithms
 Add your Travis badge to the top of your README (even if your build is failing), and include the following information for each algorithm:
   * The name of your sorting algorithm
   * The Big Oh space and run time complexity of your algorithm
   * Whether the algorithm is stable or unstable
   * A good use case for when this is the preferred algorithm to use over others, if applicable
   * Links to sources you used to research the algorithms
-  
-### Stretch Goal
-* Take one of the sorting algorithms you wrote and utilize it to sort the data in your React-Redux budget tracker app according to the cost of your expenses. 
+
+### Bubble Sort 
+
+Bubble sort is a stable algorithm and works best with small, almost sorted elements to begin with. It would not be ideal with a huge assortment of elements.
+
+Big O time: O(n) --> n = number of items in array
+Big O space: 
+Notes: 
+Not the most preferred method of Bubblesort- this is one I interpreted the best, and therefore was easier for me to write. There are versions with a swap method included, and with more research, I think I could refactor this. 
+
+Resources:
+Wikipedia (https://en.wikipedia.org/wiki/Sorting_algorithm)
+Sorting Algorithm series (http://blog.benoitvallon.com/sorting-algorithms-in-javascript/the-bubble-sort-algorithm/)
+
+### Merge Sort
+ Merge Sort is a stable alogorithm. It starts by dividing the unsorted list into sublists. Then it divides the list into lists that each only contain one element (one element is considered sorted). THen the sorted are repeatedly merged to produce new sublists, and do so until there is only 1 list remaining- that is the new sorted list.
+
+Big O time: 
+Big O space: 
+
+
+Resources:
+Wikipedia (https://en.wikipedia.org/wiki/Sorting_algorithm)
+Sorting Algorithm series http://blog.benoitvallon.com/sorting-algorithms-in-javascript/the-merge-sort-algorithm/
+https://www.geeksforgeeks.org/merge-sort/
